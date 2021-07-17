@@ -1,0 +1,4 @@
+rootProject.name = 'buildship-annotation-processing'
+
+include 'people'
+include 'town'

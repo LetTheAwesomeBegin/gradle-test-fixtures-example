@@ -1,0 +1,17 @@
+plugins {
+    id "java-library"
+    // id 'java-test-fixtures'
+}
+
+dependencies {
+    implementation(project(":people"))
+
+    testImplementation(testFixtures(project(":people")))
+    testImplementation("org.assertj:assertj-core:3.20.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
+
+}
+
+repositories {
+    mavenCentral()
+}
